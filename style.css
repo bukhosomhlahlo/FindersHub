@@ -1,0 +1,50 @@
+body{
+    background-color: white;
+}
+
+.content{
+    font-family: 'Poppins', sans-serif;
+
+}
+.content-main {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Adjust margin as needed */
+    margin-top: 2rem;
+}
+.logo img{
+    height: 4rem;
+}
+.info {
+    flex: 1 1 auto;
+    font-weight: 400;
+    font-size: clamp(24px, 4vw, 40px);
+}
+
+/* Additional styling for consistency */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+.info h3{
+    font-size: 3rem;
+    border: .2rem solid black;
+    padding-left: 12rem;
+    background-color: ;
+}
+.info h4{
+    font-size:  1.5rem;
+}
+
+.info h3, .info h4 {
+    margin-top: 0;
+}
+
+.info p {
+    margin-bottom: 15px;
+    font-size: large;
+}
