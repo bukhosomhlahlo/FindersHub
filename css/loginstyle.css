@@ -1,0 +1,256 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+}
+   
+/*  
+.box{
+    position: relative;
+    width: min(100% - 30px, 840px);
+    margin-inline: auto;
+    height: 450px;
+    background: #aba4b6;
+    border-radius: 8px;
+}
+.box form{
+    position: absolute;
+    inset: 4px;
+    background-image:
+        radial-gradient(circle closest-side, #f0e9e9 0%, #7d8288 50%, #443b58 100%),
+        linear-gradient(to right, #000000 0%, #ffffff 100%);
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index:  2;
+    display: flex;
+    flex-direction: column;
+}
+.box form h2{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding-bottom: 15px;
+}
+.box form .inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.box form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color:whitesmoke;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+ .links{
+    margin-top: .5rem;
+ }
+ .links a{
+    padding: auto;
+ }
+
+
+
+
+ /* footer */
+ /* .home-sci{
+    bottom: 0rem;
+    width: 170px;
+    display: flex;
+    justify-content:space-between;
+    
+  } */
+
+
+  /* hover */
+  /* .home-sci a{
+    padding-left: 0rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    border-spacing: 1rem;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: .2rem solid rgb(68, 6, 83);
+    border-radius: 50%;
+    font-size: 20px;
+    color: whitesmoke;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .home-sci a:hover{
+    color: rgb(64, 52, 75);
+  }
+  .home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 50%;
+    width: 0;
+    height: 100%;
+    background: #cba3f5;
+    z-index: -1;
+    transition: .4s;
+  }
+  .home-sci a:hover::before{
+    width: 100%;
+  }
+  #paragraph{
+    margin-top: 3rem;
+  }
+  footer{
+    margin-top: 34rem;
+    margin-left: 2rem;
+  }
+.home-sci a{
+position: relative;
+margin-left:;
+} */ 
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: 0.4s ease-in-out;
+}
+
+.card {
+  background-image: linear-gradient(163deg, #550e5c 0%, #021fbe 100%);
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+
+.button2 a{
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+  text-decoration: none;
+}
+
+.button2 a:hover {
+  background-color: black;
+  color: white;
+}
+
+.button3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button3:hover {
+  background-color: rgb(101, 3, 139);
+  color: white;
+}
