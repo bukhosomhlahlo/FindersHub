@@ -13,30 +13,34 @@
   <title>FindersHub</title>
 </head>
 <body>
-  <div id="sidebar">
-    <div id="menu">
-      <a href="#">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Contact</li></a>
       <div class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Items</a>
+        <a href="javascript:void(0)" class="dropbtn"><li>Items</li></a>
         <div class="dropdown-content">
-            <a href="lostitems.html">Lost Items</a>
-            <a href="contact.html">Report a Missing Item</a>
+            <a href="lostitems.html"><li>Lost Items</li></a>
+            <a href="contact.html"><li>Report a Missing Item</li></a>
         </div>
       </div>
-      <a href="post.html">Post</a>
+      <a href="post.html"><li>Post</li></a>
       <div class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Login</a>
+        <a href="javascript:void(0)" class="dropbtn"><li>Login</li></a>
         <div class="dropdown-content">
-            <a href="sign-up.html">Register</a>
-            <a href="login.html">Sign-in</a>
+            <a href="sign-up.html"><li>Register</li></a>
+            <a href="login.html"><li>Sign-in</li></a></ul>
         </div>
       </div>
-
+    </div>
+  </nav>
     
-  </div>
-  </div>
   <div id="main-content">
     <h1 style="text-align: center;">Welcome to FindersHub</h1>
     <p>Welcome to <span>F</span>inders<span>H</span>ub - your ultimate solution to lost items! We've all experienced that sinking feeling when we misplace something important. Whether it's your keys, your wallet, or even your beloved pet, the stress of losing something valuable can be overwhelming. But fear not, because FindersHub is here to help!</p>
@@ -59,47 +63,3 @@
     
   
       
-  
-      <!-- <div class="categories">
-        <form>
-          Select 
-        </form> -->
-          <!-- Add more categories as needed -->
-      </div>
-   <div class="item-button">
-    <button id="find-button" href="Items.html">Find Item</button>
-    <button id="report-button" href="post.html">Report</button>
-    </div>
-
-    <div id="footer">
-    Visit our socials
-    <span class="home-sci">
-        <a href="https://www.facebook.com/login.php/"><i class='bx bxl-facebook'></i></a>
-        <a href="https://twitter.com/?lang=en-za"><i class='bx bxl-twitter'></i></a>
-        <a href="https://www.instagram.com/?hl=en"><i class='bx bxl-instagram'></i></a>
-    </span>
-    <p>
-        &copy; 2024 FindersHub. All rights are reserved.</p>
-</div>
-
-  </div>
-
-  <script>
-    document.getElementById("find-button").addEventListener("click", function() {
-      window.location.href = "items.html";
-    });
-
-    document.getElementById("report-button").addEventListener("click", function() {
-      window.location.href = "post.html";
-    });
-
-    document.getElementById("find-button-bottom").addEventListener("click", function() {
-      window.location.href = "items.html";
-    });
-
-    document.getElementById("report-button-bottom").addEventListener("click", function() {
-      window.location.href = "post.html";
-    });
-  </script>
-</body>
-</html>
