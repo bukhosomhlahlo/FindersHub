@@ -13,46 +13,121 @@
     
 </head>
 <body>
-        <form class="form">
-    
-                <div class="flex">
-                    <label>
-                        <input class="input" type="text" placeholder="" required="">
-                        <span>first name</span>
-                    </label>
-            
-                    <label>
-                        <input class="input" type="text" placeholder="" required="">
-                        <span>last name</span>
-                    </label>
-                </div>  
-                        
-                <label>
-                    <input class="input" type="email" placeholder="" required="">
-                    <span>email</span>
-                </label> 
-                    
-                <label>
-                    <input class="input" placeholder="" type="tel" required="">
-                    <span>contact number</span>
-                </label>
-                <label>
-                    <textarea class="input01" placeholder="" rows="3" required=""></textarea>
-                    <span>message</span>
+    <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+          <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn"><li>Items</li></a>
+            <div class="dropdown-content">
+                <a href="lostitems.html"><li>Lost Items</li></a>
+                <a href="contact.html"><li>Report a Missing Item</li></a>
+            </div>
+          </div>
+          <a href="post.html"><li>Post</li></a>
+          <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn"><li>Login</li></a>
+            <div class="dropdown-content">
+                <a href="sign-up.html"><li>Register</li></a>
+                <a href="login.html"><li>Sign-in</li></a></ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <h2>Post Found Item</h2>
+        <form id="foundItemForm">
+            <label class="custum-file-upload" for="file">
+                <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="" d="M10 1C9.73478 1 9.48043 1.10536 9.29289 1.29289L3.29289 7.29289C3.10536 7.48043 3 7.73478 3 8V20C3 21.6569 4.34315 23 6 23H7C7.55228 23 8 22.5523 8 22C8 21.4477 7.55228 21 7 21H6C5.44772 21 5 20.5523 5 20V9H10C10.5523 9 11 8.55228 11 8V3H18C18.5523 3 19 3.44772 19 4V9C19 9.55228 19.4477 10 20 10C20.5523 10 21 9.55228 21 9V4C21 2.34315 19.6569 1 18 1H10ZM9 7H6.41421L9 4.41421V7ZM14 15.5C14 14.1193 15.1193 13 16.5 13C17.8807 13 19 14.1193 19 15.5V16V17H20C21.1046 17 22 17.8954 22 19C22 20.1046 21.1046 21 20 21H13C11.8954 21 11 20.1046 11 19C11 17.8954 11.8954 17 13 17H14V16V15.5ZM16.5 11C14.142 11 12.2076 12.8136 12.0156 15.122C10.2825 15.5606 9 17.1305 9 19C9 21.2091 10.7909 23 13 23H20C22.2091 23 24 21.2091 24 19C24 17.1305 22.7175 15.5606 20.9844 15.122C20.7924 12.8136 18.858 11 16.5 11Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+                </div>
+                <div class="text">
+                   <span>Click to upload Item</span>
+                   </div>
+                   <input type="file" id="file">
                 </label>
                 
-                
-			<label for="arquivo">Choose a file:</label>
-			<input accept=".jpg, .jpeg, .png, .gif, .pdf" class="inpdddut" name="arquivo" id="arquivo" type="file">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+            <div id="descriptionError" class="error"></div>
 
-                        <button href="#" class="fancy">
-                                <span class="top-key"></span>
-                                <span class="text">submit</span>
-                                <span class="bottom-key-1"></span>
-                                <span class="bottom-key-2"></span>
-                        </button>
-		</form>
-	        </div>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <div id="locationError" class="error"></div>
+
+            <label for="dateFound">Date Found:</label>
+            <input type="date" id="dateFound" name="dateFound" required>
+            <div id="dateFoundError" class="error"></div>
+
+            <label for="contactInfo">Contact Information:</label>
+            <input type="text" id="contactInfo" name="contactInfo" required>
+            <div id="contactInfoError" class="error"></div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="footer">
+        Visit our socials
+        <span class="home-sci">
+            <a href="https://www.facebook.com/login.php/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/?lang=en-za"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class='bx bxl-instagram'></i></a>
+        </span>
+        <p>
+            &copy; 2024 FindersHub. All rights are reserved.</p>
+    </div>
     
+
+    <script>
+        document.getElementById("foundItemForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            validateForm();
+        });
+
+        function validateForm() {
+            const description = document.getElementById("description").value.trim();
+            const location = document.getElementById("location").value.trim();
+            const dateFound = document.getElementById("dateFound").value;
+            const contactInfo = document.getElementById("contactInfo").value.trim();
+
+            let isValid = true;
+
+            // Reset error messages
+            document.querySelectorAll('.error').forEach(error => error.textContent = '');
+
+            // Validation
+            if (description === '') {
+                document.getElementById("descriptionError").textContent = "Description is required";
+                isValid = false;
+            }
+
+            if (location === '') {
+                document.getElementById("locationError").textContent = "Location is required";
+                isValid = false;
+            }
+
+            if (dateFound === '') {
+                document.getElementById("dateFoundError").textContent = "Date Found is required";
+                isValid = false;
+            }
+
+            if (contactInfo === '') {
+                document.getElementById("contactInfoError").textContent = "Contact Information is required";
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Form submission logic can go here
+                alert("Form submitted successfully!");
+                document.getElementById("foundItemForm").reset();
+            }
+        }
+    </script>
 </body>
 </html>
