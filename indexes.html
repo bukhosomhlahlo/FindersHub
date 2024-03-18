@@ -21,8 +21,8 @@
       <span></span>
       <ul id="menu">
         <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Contact</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="contact.html"><li>Contact</li></a>
       <div class="dropdown">
         <a href="javascript:void(0)" class="dropbtn"><li>Items</li></a>
         <div class="dropdown-content">
@@ -63,3 +63,47 @@
     
   
       
+  
+      <!-- <div class="categories">
+        <form>
+          Select 
+        </form> -->
+          <!-- Add more categories as needed -->
+      </div>
+   <div class="item-button">
+    <button id="find-button" href="Items.html">Find Item</button>
+    <button id="report-button" href="post.html">Report</button>
+    </div>
+
+    <div id="footer">
+    Visit our socials
+    <span class="home-sci">
+        <a href="https://www.facebook.com/login.php/"><i class='bx bxl-facebook'></i></a>
+        <a href="https://twitter.com/?lang=en-za"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.instagram.com/?hl=en"><i class='bx bxl-instagram'></i></a>
+    </span>
+    <p>
+        &copy; 2024 FindersHub. All rights are reserved.</p>
+</div>
+
+  </div>
+
+  <script>
+    document.getElementById("find-button").addEventListener("click", function() {
+      window.location.href = "items.html";
+    });
+
+    document.getElementById("report-button").addEventListener("click", function() {
+      window.location.href = "post.html";
+    });
+
+    document.getElementById("find-button-bottom").addEventListener("click", function() {
+      window.location.href = "items.html";
+    });
+
+    document.getElementById("report-button-bottom").addEventListener("click", function() {
+      window.location.href = "post.html";
+    });
+  </script>
+</body>
+</html>
