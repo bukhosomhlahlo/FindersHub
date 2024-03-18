@@ -5,7 +5,7 @@ body
   overflow: hidden;
   background: #333;
   color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-family: "Poppins", "Avenir", sans-serif;
 }
 
 #menuToggle
@@ -129,7 +129,6 @@ body
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
     left: 3rem;
-    transition-duration: 3s;
     
 }
 
@@ -432,4 +431,90 @@ body
  
   button[type="submit"]:hover {
     background-color: #555;
+  }
+
+
+  
+    #menuToggle {
+      top: 30px; /* Adjust positioning of menu toggle button */
+      left: 30px;
+    }
+  
+    #menu {
+      width: 150px; /* Adjust width of menu */
+      margin: -50px 0 0 -30px; /* Adjust margin for menu */
+      padding: 30px; /* Adjust padding for menu items */
+      padding-top: 100px;
+    }
+  
+    #main-content {
+      margin-left: 10px; /* Adjust margin for main content */
+      padding: 1rem; /* Adjust padding for main content */
+    }
+  
+    @media (min-width: 370px) and (max-width: 767.98px) {
+      .home-sci{
+        bottom: 0rem;
+        width: 170px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+  }
+    
+  /* Small devices (phones, 576px and up) */
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+      font-size: 16px; /* Adjust font size for better readability on small screens */
+      overflow: auto; /* Allow scrolling on small screens */
+
+    }
+  
+    /* You can add more specific styles for small devices if needed */
+  }
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+      font-size: 16px; /* Increase font size for better readability on medium-sized devices */
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+      margin: 20px; /* Add some margin to the body */
+      padding: 20px; /* Add some padding to the body */
+      overflow: auto; /* Allow scrolling if content overflows */
+      background: #222; /* Change background color */
+      color: #fff; /* Change text color */
+      font-family: "Poppins", "Avenir", sans-serif; /* Change font family */
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    body {
+      padding: 0 20px; /* Add horizontal padding for larger screens */
+      
+    }
+  }
+  @media (max-width: 575.98px) {
+    body {
+      font-size: 14px; /* Adjust font size for better readability on small screens */
+      overflow: auto; /* Allowing overflow for scrolling on small screens */
+
+    }
+    .container {
+      display: inline;
+    }
+    .home-sci{
+      bottom: 0rem;
+      width: 170px;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      margin-left: 140px;
+      
+    }
   }
