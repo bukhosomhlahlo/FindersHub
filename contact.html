@@ -11,80 +11,58 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-        
-    
-
-
-
-    <div id="sidebar">
-        <div id="menu">
-          <a href="indexes.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact</a>
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="contact.html"><li>Contact</li></a>
           <div class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Items</a>
+            <a href="javascript:void(0)" class="dropbtn"><li>Items</li></a>
             <div class="dropdown-content">
-                <a href="#">Lost Items</a>
-                <a href="post.html">Report a Missing Item</a>
+                <a href="lostitems.html"><li>Lost Items</li></a>
+                <a href="contact.html"><li>Report a Missing Item</li></a>
             </div>
           </div>
-          <a href="post.html">Post</a>
-          <div class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Login</a>
-            <div class="dropdown-content">
-                <a href="sign-up.html">Register</a>
-                <a href="login.html">Sign-in</a>
+          <a href="post.html"><li>Post</li></a>
+            <div class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn"><li>Login</li></a>
+              <div class="dropdown-content">
+                <a href="sign-up.html"><li>Register</li></a>
+                <a href="login.html"><li>Sign-in</li></a></ul>
+              </div>
+              </div>
             </div>
-          </div>
+      </nav>
     
-        
-      </div>
-      </div>
       <div id="main-content">
-        <h1 style="text-align: center;">Contact Us</h1><br>
-
-                  <div class="form-card1">
-        <div class="form-card2">
-          <form class="form">
-            <p class="form-heading">Get In Touch</p>
-      
-            <div class="form-field">
-              <input required="" placeholder="Name" class="input-field" type="text" />
-            </div>
-      
-            <div class="form-field">
-              <input
-                required=""
-                placeholder="Email"
-                class="input-field"
-                type="email"
-              />
-            </div>
-      
-            <div class="form-field">
-              <input
-                required=""
-                placeholder="Subject"
-                class="input-field"
-                type="text"
-              />
-            </div>
-      
-            <div class="form-field">
-              <textarea
-                required=""
-                placeholder="Message"
-                cols="30"
-                rows="3"
-                class="input-field"
-              ></textarea>
-            </div>
-      
-            <button class="sendMessage-btn">Send Message</button>
-          </form>
+        <h1 style="text-align: center;">Contact Us</h1>
+        <br>
+        <div class="form-card1">
+          <div class="form-card2">
+            <form class="form">
+              <p class="form-heading">Get In Touch</p>
+              <div class="form-field">
+                <input required="" placeholder="Name" class="input-field" type="text" />
+              </div>
+              <div class="form-field">
+                <input required="" placeholder="Email" class="input-field" type="email" />
+              </div>
+              <div class="form-field">
+                <input required="" placeholder="Subject" class="input-field" type="text" />
+              </div>
+              <div class="form-field">
+                <textarea required="" placeholder="Message" cols="30" rows="3" class="input-field"></textarea>
+              </div>
+              <button class="sendMessage-btn">Send Message</button>
+            </form>
+          </div>
         </div>
       </div>
-
     
         <div id="footer">
         Visit our socials

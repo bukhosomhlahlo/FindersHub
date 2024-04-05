@@ -60,20 +60,6 @@
         </div>
       </div>
     </section>
-    
-  
-      
-  
-      <!-- <div class="categories">
-        <form>
-          Select 
-        </form> -->
-          <!-- Add more categories as needed -->
-      </div>
-   <div class="item-button">
-    <button id="find-button" href="Items.html">Find Item</button>
-    <button id="report-button" href="post.html">Report</button>
-    </div>
 
     <div id="footer">
     Visit our socials
@@ -87,23 +73,64 @@
 </div>
 
   </div>
-
-  <script>
-    document.getElementById("find-button").addEventListener("click", function() {
-      window.location.href = "items.html";
-    });
-
-    document.getElementById("report-button").addEventListener("click", function() {
-      window.location.href = "post.html";
-    });
-
-    document.getElementById("find-button-bottom").addEventListener("click", function() {
-      window.location.href = "items.html";
-    });
-
-    document.getElementById("report-button-bottom").addEventListener("click", function() {
-      window.location.href = "post.html";
-    });
-  </script>
 </body>
+
+<!-- // Get the search input element
+const searchInput = document.getElementById('searchInput');
+
+// Get the search results container
+const searchResults = document.getElementById('searchResults');
+
+// Add an event listener to the search input field
+searchInput.addEventListener('input', function() {
+  // Get the search query
+  const searchQuery = searchInput.value.trim().toLowerCase();
+
+  // Check if the search query is not empty
+  if (searchQuery !== '') {
+    // Make an AJAX request to fetch the items data
+    fetch('/items') // Replace with the actual endpoint URL
+      .then(response => response.json())
+      .then(data => {
+        // Filter the items based on the search query
+        const filteredItems = data.filter(item =>
+          item.name.toLowerCase().includes(searchQuery)
+        );
+
+        // Check if any items match the search query
+        if (filteredItems.length > 0) {
+          // Clear the search results container
+          searchResults.innerHTML = '';
+
+          // Create list items for each matching item
+          filteredItems.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.textContent = item.name;
+            searchResults.appendChild(listItem);
+          });
+        } else {
+          // No matching items found
+          searchResults.innerHTML = '<p>No items found.</p>';
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching items:', error);
+      });
+  } else {
+    // Clear the search results container when the search input is empty
+    searchResults.innerHTML = '';
+  }
+});
+
+// Add an event listener to the search results container
+searchResults.addEventListener('click', function(event) {
+  // Check if a list item was clicked
+  if (event.target.tagName === 'LI') {
+    const itemName = event.target.textContent;
+
+    // Redirect to the page displaying the items corresponding to the search
+    window.location.href = `/items?search=${encodeURIComponent(itemName)}`;
+  }
+}); -->
+
 </html>

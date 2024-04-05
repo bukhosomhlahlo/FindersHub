@@ -11,6 +11,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 <body>
+    <h1>Lost Items</h1>
+    <div class="container">
     <nav role="navigation">
         <div id="menuToggle">
           <input type="checkbox" />
@@ -18,9 +20,9 @@
           <span></span>
           <span></span>
           <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Contact</li></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="contact.html"><li>Contact</li></a>
           <div class="dropdown">
             <a href="javascript:void(0)" class="dropbtn"><li>Items</li></a>
             <div class="dropdown-content">
@@ -33,79 +35,70 @@
             <a href="javascript:void(0)" class="dropbtn"><li>Login</li></a>
             <div class="dropdown-content">
                 <a href="sign-up.html"><li>Register</li></a>
-                <a href="login.html"><li>Sign-in</li></a></ul>
-            </div>
-          </div>
-        </div>
+                <a href="login.html"><li>Sign-in</li></a></ul></div>
+            
       </nav>
-    <div class="container">
-        <h1>Lost Items</h1>
-
-        <div class="item">
-            <h2>Lost Wallet</h2>
-            <img src="images/wallet.jfif" alt="Lost Wallet">
-            <p><strong>Location:</strong> Main Street, City</p>
-            <p><strong>Date Lost:</strong> March 10, 2024</p>
-            <p class="description">Black leather wallet containing ID cards and cash.</p>
-            <p><strong>Contact:</strong> John Doe - johndoe@example.com</p>
+        <div class="wrapper">
+            <div class="card">
+                <img src="images/wallet.jfif" alt="Wallet"/>
+                <div class="info">
+                    <h2>Lost Wallet</h2>
+                    <p><strong>Location:</strong> CapaCiti, at Salt River</p>
+                    <p><strong>Date Lost:</strong> March 26, 2024</p>
+                    <p class="description">Black Wallet with money and banks cards inside</p>
+                    <!-- <p><strong>Contact:</strong> Jane Smith - janesmith@example.com</p> -->
+                    <button>Claim</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="images/phone.jpeg" alt="A phone" />
+                <div class="info">
+                    <h2>Lost Phone</h2>
+                    <p><strong>Location:</strong> CapaCiti, at Salt River</p>
+                    <p><strong>Date Lost:</strong> March 12, 2024</p>
+                    <p class="description">Silver Grey Samsung.</p>
+                    <!-- <p><strong>Contact:</strong> Jane Smith - janesmith@example.com</p> -->
+                    <button>Claim</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="images/headset.png" alt="An audio headset" />
+                <div class="info">
+                    <h2>Lost Keys</h2>
+                    <p><strong>Location:</strong> CapaCiti, at Salt River</p>
+                    <p><strong>Date Lost:</strong> March 5, 2024</p>
+                    <p class="description">Black JBL Headsets</p>
+                    <!-- <p><strong>Contact:</strong> Jane Smith - janesmith@example.com</p> -->
+                    <button>Claim</button>
+                </div>
+                
+            </div>
         </div>
-
-        <div class="item">
-            <h2>Lost Keys</h2>
-            <img src="images/keys.jfif" alt="Lost Keys">
-            <p><strong>Location:</strong> Park, Near the Fountain</p>
-            <p><strong>Date Lost:</strong> March 12, 2024</p>
-            <p class="description">Set of keys with a  VW key.</p>
-            <p><strong>Contact:</strong> Jane Smith - janesmith@example.com</p>
-        </div>
-
-        <div class="item">
-            <h2>Lost Phone</h2>
-            <img src="images/phone.jpeg" alt="Lost Phone">
-            <p><strong>Location:</strong> CapaCiti, at Salt River</p>
-            <p><strong>Date Lost:</strong> March 12, 2024</p>
-            <p class="description">Silver Grey Samsung.</p>
-            <p><strong>Contact:</strong> Jane Smith - janesmith@example.com</p>
-        </div>
-
-        <div class="item">
-            <h2>Lost Headsets</h2>
-            <img src="images/headset.png" alt="Lost Headsets">
-            <p><strong>Location:</strong> Park at Khayelitsha, Near the Club</p>
-            <p><strong>Date Lost:</strong> March 12, 2024</p>
-            <p class="description">Black JBL headphones with microphone</p>
-            <p><strong>Contact:</strong> Jane Smith - janesmith@example.com</p>
-        </div>
-
-        <!-- <div class="item">
-            <h2>Lost Keys</h2>
-            <img src="https://via.placeholder.com/200" alt="Lost Keys">
-            <p><strong>Location:</strong> Park, Near the Fountain</p>
-            <p><strong>Date Lost:</strong> March 12, 2024</p>
-            <p class="description">Set of keys with a blue keychain.</p>
-            <p><strong>Contact:</strong> Jane Smith - janesmith@example.com</p>
-        </div>
-
-        <div class="item">
-            <h2>Lost Keys</h2>
-            <img src="https://via.placeholder.com/200" alt="Lost Keys">
-            <p><strong>Location:</strong> Park, Near the Fountain</p>
-            <p><strong>Date Lost:</strong> March 12, 2024</p>
-            <p class="description">Set of keys with a blue keychain.</p>
-            <p><strong>Contact:</strong> Jane Smith - janesmith@example.com</p>
-        </div>
-
-        <div class="item">
-            <h2>Lost Keys</h2>
-            <img src="https://via.placeholder.com/200" alt="Lost Keys">
-            <p><strong>Location:</strong> Park, Near the Fountain</p>
-            <p><strong>Date Lost:</strong> March 12, 2024</p>
-            <p class="description">Set of keys with a blue keychain.</p>
-            <p><strong>Contact:</strong> Jane Smith - janesmith@example.com</p>
-        </div> -->
-
-        <!-- Add more lost items here -->
-
     </div>
+    <p id="lost">Have you misplaced something recently? 
+        Perhaps you've left behind a cherished belonging in our premises. 
+        Our lost items section is here to help reunite you with your possessions. 
+        To claim an item, please provide detailed information about the lost item, 
+        including its description, any distinctive features, and the approximate 
+        date and location where it was misplaced. Additionally, we require proof 
+        of ownership, which can be provided in the form of a proof of purchase, 
+        receipt, or photographic evidence demonstrating your possession of the item.</p>
+        <p id="lost">Our aim is to ensure that lost items are returned to their rightful owners promptly and efficiently. 
+        Please browse through the images and claim your item.
+        We'll do our utmost to assist you in reclaiming your belongings."</p>
+    <footer>
+        
+        <!-- <span class="home-sci">
+            <a href="https://www.facebook.com/login.php/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/?lang=en-za"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class='bx bxl-instagram'></i></a>
+        </span> -->
+        <p>
+            &copy; 2024 FindersHub. All rights are reserved.
+        </p>
+    </footer> 
+
 </body>
 </html>
